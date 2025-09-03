@@ -56,7 +56,9 @@
     </ul>
 </section>
 
+<?php /*
 <a href="https://lin.ee/6SXgP7V" target="_blank" class="line-bnr"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/line_bnr.svg" alt="8月中旬プレオープン予定!!"></a>
+*/?>
 
 <section class="yourself-sec" id="link03">
     <div class="yourself-sec__cont">
@@ -69,7 +71,7 @@
                 esty gym＋24（エスティジム プラス24）は<br>
                 本格的なマシンが豊富にそろう無人フィットネスジム<br>
                 スマホ一つで誰でも簡単にすぐ運動ができます。<br>
-                2,980円(税込3,278円)～なので気軽に始められる、<br>
+                2,980円(税込3,278円)なので気軽に始められる、<br>
                 長く続けられるフィットネスジムです。
             </p>
         </div>
@@ -523,6 +525,28 @@
     </dl>
 </section>
 
+<section class="top-main">
+    <div class="top-main__info">
+        <?php
+            $topcam_args = array(
+                'post_type' => 'topcam',
+                'posts_per_page' => 1,
+            );
+            $topcam_query = new WP_Query($topcam_args);
+            if ($topcam_query->have_posts()) :
+                while ($topcam_query->have_posts()) : $topcam_query->the_post();
+        ?>
+        <picture>
+            <source media="(min-width:641px)" srcset="<?php the_field('top-cam-pc'); ?>">
+            <img src="<?php the_field('top-cam-sp'); ?>" alt="<?php the_title(); ?>">
+        </picture>
+        <?php the_content(); ?>
+        <?php endwhile; endif;
+            wp_reset_postdata();
+        ?>
+    </div>
+</section>
+
 <section class="sec --flow">
     <h2 class="sec__ttl5"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/flow_ttl.svg" alt=""></h2>
     <p class="sec__read">まずは公式LINE公式アカウントに登録！</p>
@@ -577,6 +601,7 @@
 
 <a href="https://lin.ee/6SXgP7V" target="_blank" class="recruit-bnr"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/line_btn.svg" alt=""></a>
 
+<?php /*
 <section class="sec --column">
     <h2 class="sec__ttl5"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/column_ttl.svg" alt=""></h2>
     <ul class="column-list">
@@ -609,11 +634,11 @@
     </ul>
     <a href="column/" class="btn btn--red btn--590">記事一覧はこちら</a>
 </section>
+*/?>
 
 <section class="sec --insta">
     <h2 class="sec__ttl5"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/insta_ttl.svg" alt=""></h2>
     <figure class="insta-list">
-
 <!-- SnapWidget -->
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
 <iframe src="https://snapwidget.com/embed/1102410" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; " title="Posts from Instagram"></iframe>
@@ -650,7 +675,9 @@
     <div class="info-area__bdy">
         <h3 class="info-area__ttl">エスティフィットネスのご案内</h3>
         <p class="info-area__txt">
-            半田市最大級のスポーツジム。<br class="pc-show">90台以上のマシン、女性専用ジム完備、<br class="pc-show">地域唯一のマシンピラティス専門スタジオ、週60本以上のスタジオレッスン、<br class="pc-show">準天然温泉+サウナの充実した温浴設備で皆様の健康をサポートします。
+            半田市最大級のesty fitness clubは担当者制度でちゃんとサポートするフィットネスクラブです。<br>
+            90台以上のマシン、女性専用ジム完備、地域唯一のマシンピラティス専門スタジオ、週60本以上のスタジオレッスン、<br class="pc-show">
+            準天然温泉+サウナの充実した温浴設備で皆様の健康をサポートします。
         </p>
         <ul class="info-area__list">
             <li>

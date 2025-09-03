@@ -27,7 +27,6 @@ body {
         @include max-screen($screen-xs) {
             background-image: url(../img/top/camp_bg_sp.png);
             padding: percentage(70/375) percentage(12/375);
-            background-size: 100% auto;
             margin-top: -6%;
         }
         img {

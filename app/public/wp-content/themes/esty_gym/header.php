@@ -9,18 +9,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-W2QKNMHT');</script>
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
-<title><?php if ( is_home() ) :?>esty gym (エスティ ジム)＋24｜9月1日OPEN！半田市24時間ジム<?php else : ?><?php the_title(); ?> | esty gym (エスティ ジム)＋24｜9月1日OPEN！半田市24時間ジム<?php endif; ?></title>
+<title><?php if ( is_home() ) :?>esty gym (エスティ ジム)＋24｜NEW OPEN！半田市24時間ジム<?php else : ?><?php the_title(); ?> | esty gym (エスティ ジム)＋24｜NEW OPEN！半田市24時間ジム<?php endif; ?></title>
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 <meta content="telephone=no" name="format-detection" />
 <meta content="width=device-width,initial-scale=1" name="viewport" />
 <meta content="" name="keywords" />
-<meta content="【半田市昭和町・成岩駅徒歩3分】初心者も安心、簡単操作の最新マシン導入。月額2,980円〜手軽に通える24時間営業のフィットネスジムがこの夏オープン！" name="description" />
-<meta content="esty gym (エスティ ジム)＋24｜9月1日OPEN！半田市24時間ジム" property="og:title" />
-<meta content="【半田市昭和町・成岩駅徒歩3分】初心者も安心、簡単操作の最新マシン導入。月額2,980円〜手軽に通える24時間営業のフィットネスジムがこの夏オープン！" property="og:description" />
+<meta content="【半田市昭和町・成岩駅徒歩3分】初心者も安心、簡単操作の最新マシン導入。月額2,980円(税別)手軽に通える24時間営業のフィットネスジム" name="description" />
+<meta content="esty gym (エスティ ジム)＋24｜NEW OPEN！半田市24時間ジム" property="og:title" />
+<meta content="【半田市昭和町・成岩駅徒歩3分】初心者も安心、簡単操作の最新マシン導入。月額2,980円(税別)手軽に通える24時間営業のフィットネスジム" property="og:description" />
 <meta content="https://estygym24.jp/" property="og:url" />
 <meta content="" property="og:image" />
 <meta content="website" property="og:type" />
-<meta content="esty gym (エスティ ジム)＋24｜9月1日OPEN！半田市24時間ジム" property="og:site_name" />
+<meta content="esty gym (エスティ ジム)＋24｜NEW OPEN！半田市24時間ジム" property="og:site_name" />
 <meta content="https://estygym24.jp/" property="og:site_url" />
 <link href="<?php echo get_template_directory_uri(); ?>/assets/css/base.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
