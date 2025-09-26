@@ -24,6 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta content="https://estygym24.jp/" property="og:site_url" />
 <link href="<?php echo get_template_directory_uri(); ?>/assets/css/base.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
 <?php if ( is_home() || is_front_page() ) { ?>
 <link href="<?php echo get_template_directory_uri(); ?>/assets/css/top.css" rel="stylesheet" type="text/css" />
 <?php } ?>

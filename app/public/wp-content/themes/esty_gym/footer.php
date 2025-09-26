@@ -234,6 +234,76 @@ $(".studio-mv a").modaal({
 });
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+<script>
+$(function(){
+	var setElm = $('.viewer360'),
+	imgType = ".png";
+
+	setElm.each(function(){
+		var self = $(this),
+		setScreen = self.children('div').attr('id'),
+		setNum = self.attr('data-num'),
+		setImgPass = self.attr('data-pass');
+
+		self.children('div').wrapAll('<div class="screenWrap"></div>').end().append('<nav></nav>');
+
+		var thisNav = self.find('nav');
+
+		if(setNum > 0){
+			for (var i=0; i<setNum; i++) {
+				thisNav.append('<a href="javascript:void(0);" class="view' + (i+1) + '"></a>');
+			}
+		}
+
+        var setWith = 120;
+        
+        if ($(window).width() <= 768) {
+            setWith = 80;
+        }
+
+		thisNav.find('a').click(function(){
+			self.find('.pnlm-ui.pnlm-grab, .pnlm-render-container').addClass('targetHide');
+			setTimeout(function(){self.find('.targetHide').remove();},600);
+
+			var acvPos = $(this).index()+1;
+			pannellum.viewer(setScreen, {
+				"panorama": setImgPass + acvPos + imgType,
+				"autoLoad": true,
+				"autoRotate": -3,
+				"hfov": setWith
+			});
+			thisNav.find('a').removeClass('active');
+			$(this).addClass('active');
+		});
+
+		thisNav.find('a:first').click()
+
+		self.find('.screenWrap').append('<a href="javascript:void(0);" class="prev"></a><a href="javascript:void(0);" class="next"></a>');
+
+		self.find('.prev').click(function(){
+			var acvPos = thisNav.find('a.active').index()+1,
+			navLength = thisNav.find('a').length;
+			if(acvPos == 1){
+				thisNav.find('a').eq(navLength-1).click();
+			} else {
+				thisNav.find('a.active').prev().click();
+			}
+		});
+
+		self.find('.next').click(function(){
+			var acvPos = thisNav.find('a.active').index()+1,
+			navLength = thisNav.find('a').length;
+			if(acvPos == navLength){
+				thisNav.find('a').eq(0).click();
+			} else {
+				thisNav.find('a.active').next().click();
+			}
+		});
+
+	});
+});
+</script>
 
 <?php } ?>
 
