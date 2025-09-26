@@ -162,7 +162,7 @@
         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/yourself_slide03.jpg" alt=""></li>
     </ul>
     */?>
-    <div class="viewer360" data-num="5" data-pass="<?php echo get_template_directory_uri(); ?>/assets/img/theta/estygym24-0">
+    <div class="viewer360" data-num="3" data-pass="<?php echo get_template_directory_uri(); ?>/assets/img/theta/estygym24-0">
 		<div id="screen"></div>
     </div><!-- /.viewer360 -->
 </section>

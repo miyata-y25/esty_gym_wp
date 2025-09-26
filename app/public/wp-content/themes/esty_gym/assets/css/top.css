@@ -2679,6 +2679,14 @@
   line-height: 1;
   text-align: center;
   padding: 0.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .viewer360 nav a {
@@ -2690,6 +2698,7 @@
   display: inline-block;
   overflow: hidden;
   background-size: cover;
+  background-position: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.5s ease;
@@ -2767,7 +2776,14 @@
   .viewer360 #screen {
     height: 60vh;
   }
+  .viewer360 nav {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .viewer360 nav a {
-    height: 40px;
+    height: 50px;
+    width: 48%;
   }
 }
